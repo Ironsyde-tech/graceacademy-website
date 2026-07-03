@@ -57,7 +57,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${inter.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <body>
         <Navbar />
         <main>{children}</main>
