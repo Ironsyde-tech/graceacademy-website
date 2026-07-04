@@ -173,6 +173,7 @@
 
 .statItem {
   flex: 1;
+  min-width: 0;
   text-align: center;
   position: relative;
 }
@@ -834,6 +835,9 @@
   .hero {
     min-height: auto;
   }
+  .heroShapes {
+    display: none;
+  }
   .heroContent {
     padding: calc(var(--nav-h) + var(--s-2xl)) var(--s-md) var(--s-3xl);
   }
@@ -864,7 +868,8 @@
     transform: none;
     margin: var(--s-2xl) var(--s-md) 0;
     width: auto;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: var(--s-md);
   }
   .scrollDown {
@@ -925,6 +930,15 @@
 @media (max-width: 390px) {
   .heroContent {
     padding: calc(var(--nav-h) + var(--s-xl)) 0.8rem var(--s-2xl);
+  }
+
+  .heroLabel {
+    gap: 0.55rem;
+    letter-spacing: 0.14em;
+  }
+
+  .heroLabel::before {
+    width: 28px;
   }
 
   .heroTitle {
