@@ -24,10 +24,10 @@ const navLinks = [
 const mobileNav = [
   { href: '/', label: 'Home', icon: House },
   { href: '/academics', label: 'Learn', icon: BookOpen },
-  { href: '/careers', label: 'Jobs', icon: GraduationCap },
   { href: '/news', label: 'News', icon: Newspaper },
   { href: ADMISSIONS_URL, label: 'Apply', icon: GraduationCap, external: true },
   { href: '/contact', label: 'Call', icon: Phone },
+  { href: '/careers', label: 'Jobs', icon: GraduationCap },
 ];
 
 export default function Navbar() {

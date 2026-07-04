@@ -50,7 +50,7 @@ export default function Footer() {
           <div className={styles.contentGrid}>
             <div className={styles.column}>
               <h4 className={styles.colTitle}>Navigate</h4>
-              <ul>
+              <ul className={styles.navListTwoColumn}>
                 <li><Link href="/academics">Academics</Link></li>
                 <li><Link href="/student-life">Student Life</Link></li>
                 <li><Link href="/gallery">Gallery</Link></li>
