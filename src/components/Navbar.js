@@ -15,10 +15,10 @@ const navLinks = [
   { href: '/academics', label: 'Academics' },
   { href: '/heritage', label: 'Heritage' },
   { href: '/student-life', label: 'Student Life' },
-  { href: '/careers', label: 'Careers' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/news', label: 'News' },
   { href: '/contact', label: 'Contact' },
+  { href: '/careers', label: 'Careers', variant: 'button' },
 ];
 
 const mobileNav = [
@@ -76,7 +76,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`${styles.link} ${pathname === link.href ? styles.linkActive : ''}`}
+                    className={`${link.variant === 'button' ? styles.miniCta : styles.link} ${pathname === link.href ? (link.variant === 'button' ? styles.miniCtaActive : styles.linkActive) : ''}`}
                   >
                     {link.label}
                   </Link>

@@ -47,48 +47,49 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className={styles.column}>
-            <h4 className={styles.colTitle}>Navigate</h4>
-            <ul>
-              <li><Link href="/academics">Academics</Link></li>
-              <li><Link href="/careers">Careers</Link></li>
-              <li><Link href="/admin/login">Admin Login</Link></li>
-              <li><a href={ADMISSIONS_URL} target="_blank" rel="noreferrer">Admissions</a></li>
-              <li><Link href="/student-life">Student Life</Link></li>
-              <li><Link href="/gallery">Gallery</Link></li>
-              <li><Link href="/news">News &amp; Events</Link></li>
-              <li><a href={ERP_URL} target="_blank" rel="noreferrer">ERP Portal</a></li>
-            </ul>
-          </div>
+          <div className={styles.contentGrid}>
+            <div className={styles.column}>
+              <h4 className={styles.colTitle}>Navigate</h4>
+              <ul>
+                <li><Link href="/academics">Academics</Link></li>
+                <li><Link href="/student-life">Student Life</Link></li>
+                <li><Link href="/gallery">Gallery</Link></li>
+                <li><Link href="/news">News &amp; Events</Link></li>
+                <li><Link href="/careers">Careers</Link></li>
+                <li><Link href="/admin/login">Admin Login</Link></li>
+                <li><a href={ADMISSIONS_URL} target="_blank" rel="noreferrer">Admissions</a></li>
+                <li><a href={ERP_URL} target="_blank" rel="noreferrer">ERP Portal</a></li>
+              </ul>
+            </div>
 
-          {/* Programs */}
-          <div className={styles.column}>
-            <h4 className={styles.colTitle}>Programs</h4>
-            <ul>
-              <li><Link href="/academics">Crèche &amp; Nursery</Link></li>
-              <li><Link href="/academics">Primary School</Link></li>
-              <li><Link href="/academics">Junior High (JHS)</Link></li>
-              <li><Link href="/academics">Senior High (SHS)</Link></li>
-              <li><a href={ADMISSIONS_URL} target="_blank" rel="noreferrer">Scholarships</a></li>
-            </ul>
-          </div>
+            <div className={styles.stackColumn}>
+              <div className={styles.column}>
+                <h4 className={styles.colTitle}>Programs</h4>
+                <ul>
+                  <li><Link href="/academics">Crèche &amp; Nursery</Link></li>
+                  <li><Link href="/academics">Primary School</Link></li>
+                  <li><Link href="/academics">Junior High (JHS)</Link></li>
+                  <li><Link href="/academics">Senior High (SHS)</Link></li>
+                  <li><a href={ADMISSIONS_URL} target="_blank" rel="noreferrer">Scholarships</a></li>
+                </ul>
+              </div>
 
-          {/* Contact */}
-          <div className={styles.column}>
-            <h4 className={styles.colTitle}>Get in Touch</h4>
-            <div className={styles.contactList}>
-              <div className={styles.contactItem}>
-                <span className={styles.contactIcon}><MapPin size={16} strokeWidth={2.1} aria-hidden="true" /></span>
-                <span>Spintex Road, Tema-Accra<br />P.O. Box SR 169, Spintex Road - Tema</span>
-              </div>
-              <div className={styles.contactItem}>
-                <span className={styles.contactIcon}><Phone size={16} strokeWidth={2.1} aria-hidden="true" /></span>
-                <span>+233 54 351 0263 / +233 26 226 2428</span>
-              </div>
-              <div className={styles.contactItem}>
-                <span className={styles.contactIcon}><Mail size={16} strokeWidth={2.1} aria-hidden="true" /></span>
-                <span>graceacademy233@gmail.com</span>
+              <div className={styles.column}>
+                <h4 className={styles.colTitle}>Get in Touch</h4>
+                <div className={styles.contactList}>
+                  <div className={styles.contactItem}>
+                    <span className={styles.contactIcon}><MapPin size={16} strokeWidth={2.1} aria-hidden="true" /></span>
+                    <span>Spintex Road, Tema-Accra<br />P.O. Box SR 169, Spintex Road - Tema</span>
+                  </div>
+                  <div className={styles.contactItem}>
+                    <span className={styles.contactIcon}><Phone size={16} strokeWidth={2.1} aria-hidden="true" /></span>
+                    <span>+233 54 351 0263 / +233 26 226 2428</span>
+                  </div>
+                  <div className={styles.contactItem}>
+                    <span className={styles.contactIcon}><Mail size={16} strokeWidth={2.1} aria-hidden="true" /></span>
+                    <span>graceacademy233@gmail.com</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
